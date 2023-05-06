@@ -22,6 +22,7 @@
     "@suid/vite-plugin": "^0.1.2",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.16.1",
+    "@types/office-js": "^1.0.323",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.54.1",
     "esbuild": "^0.14.54",
@@ -43,6 +44,7 @@
     "vite-plugin-solid": "^2.6.1"
   },
   "dependencies": {
+    "@microsoft/office-js": "^1.1.86",
     "@solidjs/meta": "^0.28.2",
     "@solidjs/router": "^0.7.0",
     "@suid/icons-material": "^0.5.9",

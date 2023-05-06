@@ -2492,6 +2492,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@microsoft/office-js@^1.1.86":
+  version "1.1.86"
+  resolved "https://registry.yarnpkg.com/@microsoft/office-js/-/office-js-1.1.86.tgz#0ea0f40f0404d9b0348f396cb807a12d8910d7ca"
+  integrity sha512-CrHoR+1QyWJ9jsmM1pikNNLY9vW84VYi7I/+MXLQycEvZl8kKZ2zQtmCIp7U7pzT7JxyrwVnHx37aqbd2ITRzQ==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -2914,6 +2919,11 @@
   version "18.16.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.1.tgz#5db121e9c5352925bb1f1b892c4ae620e3526799"
   integrity sha512-DZxSZWXxFfOlx7k7Rv4LAyiMroaxa3Ly/7OOzZO8cBNho0YzAi4qlbrx8W27JGqG57IgR/6J7r+nOJWw6kcvZA==
+
+"@types/office-js@^1.0.323":
+  version "1.0.323"
+  resolved "https://registry.yarnpkg.com/@types/office-js/-/office-js-1.0.323.tgz#0784bedf19ba84d7996f93cfc5db7c3e53ab7b2e"
+  integrity sha512-76agbw9gMh+kzpwLxXkaAAyfxkOaYL4wUDIF6d5CWEYryZHymA5m4U5Btq5zIdF8A/lNtVG5xSPqfEyMegvx+A==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
