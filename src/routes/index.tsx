@@ -20,7 +20,7 @@ const Home: Component = () => {
         height="100vh"
         spacing={2}>
         <Button onClick={onNavigate} variant="contained" color="primary">
-          Login
+          Test
         </Button>
       </Stack>
     </>

@@ -9,7 +9,7 @@ import { authStore } from '~/store';
 
 interface Props {}
 
-const Login: Component<Props> = () => {
+const Test: Component<Props> = () => {
   const [email, setEmail] = createSignal<string>('');
   const [password, setPassword] = createSignal<string>('');
 
@@ -25,24 +25,22 @@ const Login: Component<Props> = () => {
     setPassword(password);
   };
 
-  const onClick = async () => {
-    if (authStore.user) {
-      await signOut(auth);
-      console.log('Logging out');
-    } else {
-      await signInWithEmailAndPassword(auth, email(), password());
-      console.log('Logging in');
-    }
-  };
-
   const onTest = async () => {
-    const data = await executeMutation(TestAuthContextDocument);
-    console.log('testAuthContext', data?.testAuthContext);
+    // const data = await executeMutation(TestAuthContextDocument);
+    // console.log('testAuthContext', data?.testAuthContext);
+
+    // Open Outlook in a new browser window
+    const outlookWindow = window.open('https://outlook.office.com', '_blank');
+
+    if (!outlookWindow) {
+      console.warn("Couldn't open Outlook window");
+      throw new Error("Couldn't open Outlook window");
+    }
   };
 
   return (
     <>
-      <Title>Login</Title>
+      <Title>Test</Title>
       <Stack direction="column" alignItems="center" justifyContent="center" spacing={2}>
         <TextField
           placeholder="Northeastern Email"
@@ -56,16 +54,12 @@ const Login: Component<Props> = () => {
           value={password()}
           onChange={(_, value) => onPasswordChange(value)}
         />
-        <Button variant="contained" color="primary" onClick={onClick}>
-          {authStore.user ? 'Logout' : 'Login'}
-        </Button>
-
         <Button variant="contained" color="primary" onClick={onTest}>
-          Test Auth Context
+          Test
         </Button>
       </Stack>
     </>
   );
 };
 
-export default Login;
+export default Test;
