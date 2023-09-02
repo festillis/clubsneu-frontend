@@ -16,6 +16,10 @@ declare interface ImportMetaEnv {
   // GRAPHQL
   readonly VITE_GRAPHQL_PORT: number;
   readonly VITE_GRAPHQL_ENDPOINT: string;
+
+  // MICROSOFT
+  readonly MICROSOFT_CLIENT_ID: string;
+  readonly MICROSOFT_TENANT_ID: string;
 }
 
 declare namespace NodeJS {
